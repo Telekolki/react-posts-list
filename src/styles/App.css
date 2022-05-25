@@ -25,6 +25,13 @@
     align-items: center;
 }
 
+.post_btns {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
 .remove-btn {
     margin-right: 0.5rem;
   }
