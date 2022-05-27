@@ -14,17 +14,17 @@ function PostForm({addNewPost}) {
     return (
         <form>
             <MyInput 
-            value={post.title}
-            onChange={e => {setPost({...post, title: e.target.value})}}
-            type="text"
-            placeholder="Post name">
+                value={post.title}
+                onChange={e => {setPost({...post, title: e.target.value})}}
+                type="text"
+                placeholder="Post name">
             </MyInput>
 
             <MyInput 
-            value={post.body}
-            onChange={e => {setPost({...post, body: e.target.value})}}
-            type="text" 
-            placeholder="Post content">
+                value={post.body}
+                onChange={e => {setPost({...post, body: e.target.value})}}
+                type="text" 
+                placeholder="Post content">
             </MyInput>
 
             <MyButton type="button" onClick={ e => onClick(e, post) }> Create post </MyButton>
