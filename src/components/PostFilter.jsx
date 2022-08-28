@@ -5,8 +5,8 @@ import MySelect from "./UI/select/MySelect";
 function PostFilter({filter, setFilter}) {
 
     let options = [
-        {name: 'По названию', value: 'title'}, 
-        {name: 'По описанию', value: 'body'}
+        {name: 'Name', value: 'title'}, 
+        {name: 'Description', value: 'body'}
       ]
       
   return (
@@ -19,7 +19,7 @@ function PostFilter({filter, setFilter}) {
         </MyInput>
         <MySelect 
             options={options} 
-            defaultValue="Выберите сортировку"
+            defaultValue="Sort by"
             value={filter.sort}
             onChange={newSort => (setFilter({...filter, sort: newSort}))}
         ></MySelect>
